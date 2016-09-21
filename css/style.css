@@ -115,7 +115,6 @@
 /*顶部图片内搜索部分*/
 .headerSearch{
 	margin-top: -58px;
-	z-index: 9999;
 }
 .rank{
 	float: left;
@@ -1069,8 +1068,9 @@
 
 /*header结束♪(^∇^*)*/
 
-/*身体开始！*/
+/*Banner区*/
 
+/*Banner区结束*/
 
 
 
