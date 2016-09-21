@@ -167,5 +167,20 @@ $(function(){
 		function(){$('.zhiboNavInner')[0].style.display = 'block'},
 	    function(){$('.zhiboNavInner')[0].style.display = 'none'} 
 	)
+	//广场
+	$('.guangchang').hover(
+		function(){$('.guangchangInner')[0].style.display = 'block'},
+	    function(){$('.guangchangInner')[0].style.display = 'none'} 
+	)
+	//手机端
+	$('.shoujiduan').hover(
+		function(){$('.shoujiduanInner')[0].style.display = 'block'},
+	    function(){$('.shoujiduanInner')[0].style.display = 'none'} 
+	)
+	/*头部标语*/
+	$('.headerImg').hover(
+		function(){$('.headerNote')[0].style.display = 'block'},
+	    function(){$('.headerNote')[0].style.display = 'none'} 
+	)
 	
 })/*JS结束*/

@@ -956,3 +956,122 @@
 	from{background-position: 10px -1612px;}
 	to{background-position: 15px -1612px;}
 }
+
+/*广场加框*/
+.guangchangInner{
+	width: 388px;
+	height: 222px;
+	background-color: #FFF;
+	position: absolute;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	display: none;
+}
+.guangchangInner .left{
+	float: left;
+	width: 108px;
+	padding-top: 15px;
+}
+.guangchangInner .right{
+	float: right;
+	width: 280px;
+	height: 200px;
+	padding: 20px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border-left:1px solid #E4E5F0 ;
+}
+.guangchangInner li{
+	float: none;
+	width: 108px;
+	height: 30px;
+	padding: 0;
+	font-size: 12px;
+	line-height: 30px;
+	text-indent: 1em;
+	color: black;
+}
+.guangchangInner li:hover{
+	color: black;
+	background-color: #E5E9EF;
+}
+.huodongzhongxin{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons.png);
+	background-position: -282px -1179px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding: 0 2px;
+}
+.guangchangyouxizhongxin{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons.png);
+	background-position: -282px -1241px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding: 0 2px;
+}
+.guangchanghuayou{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons.png);
+	background-position: -282px -1370px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding: 0 2px;
+}
+.mangguoTV{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(../img/icons.png);
+	background-position: -281px -1433px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding: 0 2px;
+}
+/*广场加框结束*/
+/*手机端加框（二维码）*/
+.shoujiduan{
+	position: relative;
+}
+.shoujiduanInner{
+	position: absolute;
+	left: -180px;
+	top: 95%;
+	display: none;
+}
+.erweima{
+	position: absolute;
+	left: 82px;
+	top: 31px;
+}
+/*手机端加框结束*/
+/*header大图hover标语~\(≧▽≦)/~*/
+.headerNote{
+	position: absolute;
+	left: 330px;
+	top: 120px;
+	height: 20px;
+	padding: 6px 12px;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 4px;
+	font-size: 13px;
+	color: white;
+	display: none;
+	cursor: pointer;
+}
+/*header大图标语结束*/
+
+/*header结束♪(^∇^*)*/
+
+/*身体开始！*/
+
+
+
+
+
