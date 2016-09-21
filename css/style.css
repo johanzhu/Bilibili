@@ -1,0 +1,958 @@
+/*公共样式*/
+.comWidth{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*header区域n(*≧▽≦*)n*/
+.header{position: relative;}
+.headerImg{
+	background-image: url(../img/顶部图片.png);
+    width: 100%;
+    height: 180px;
+    background-position: center !important;
+    background-repeat:no-repeat ;
+}
+.headerLogo img{
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	width: 220px;
+	height: 105px;
+}
+.headBlur{
+	width: 100%;
+	height: 42px;
+	background-color: transparent;
+	position: absolute;
+	top: 0px;
+	box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
+	z-index: 1000;
+}
+.blur{
+	background-image: url(../img/顶部图片.png);
+	background-position: center 0 ;
+    background-repeat:no-repeat ;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(255,255,255,0.4);
+	z-index: 99;
+}
+    /*blur导航条*/
+.blurNav{position:absolute;z-index: 10000;width: inherit;}   
+.blurNav li{
+	float: left;
+	font-size: 13px;
+	color: #222;
+	line-height: 42px;
+	padding: 0 15px;
+}
+.blurNav li:hover{background-color: rgba(255,255,255,0.3);cursor: pointer;height: 42px;} 
+.blurNav .home{
+	background: url(../img/icons.png);
+	background-position: -910px -74px;
+	background-repeat: no-repeat;
+	margin-left: -10px;
+}
+.home span{padding-left: 16px;}
+.blurNav .trends{
+	position: relative;
+}
+.blurNav .trendsNum{
+	 display: block;
+     position: absolute;
+     background-color: #F25D8E;
+     border-radius: 12px;
+     font-size: 12px;
+     height: 12px;
+     line-height: 12px;
+     padding: 1px 4px;
+     vertical-align: middle;
+     color: white;
+     top:16%;
+     left: 75%;
+}
+.headportrait{
+	position: relative;
+}
+.touxiang img{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background: url(../img/icons.png);
+	background-position: -129px -67px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	background-color: #fff;
+	position: relative;
+}	
+.submit{
+	background-color: #F25D8E;
+	box-sizing: content-box;
+	color: white !important;
+	border-bottom: 5px #F25D8E solid;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.submit:hover{
+	background-color: #F982A9 !important;
+    border-bottom: 5px #F982A9 solid;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*顶部图片内搜索部分*/
+.headerSearch{
+	margin-top: -58px;
+	z-index: 9999;
+}
+.rank{
+	float: left;
+	width: 68px;
+	height: 34px;
+	background-color: rgba(255,255,255,0.8);
+	transform: translateZ(1px);
+	border-radius: 4px;
+	line-height: 34px;
+	color: #F580aa;
+}
+.ranklogo{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/icons.png); 
+	background-position: -662px -664px;
+	background-repeat: no-repeat;
+	padding: 0 3px;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+.rank:hover{
+	background-color: #FFF;
+	cursor: pointer;
+}
+.searchBox{
+	transform: translateZ(1px);
+	float: right;
+	height: 34px;
+	line-height: 34px;
+	width: 268px;
+	background-color: rgba(255,255,255,0.88);
+	border-radius: 4px;
+	margin-left: 2px;
+	padding-left: 10px;
+}
+.searchBox input{
+	width: 220px;
+}
+.searchBox:hover{background-color: #FFF;cursor: pointer;}
+.searchLogo{
+	display: inline-block;
+	height: 34px;
+	width: 30px;
+	background: url(../img/icons.png); 
+	background-position: -652px -722px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.searchLogo:hover{
+	background-position: -717px -722px;
+}
+/*顶部搜索部分结束*/
+/*顶部下方导航区*/
+.headerNav li{
+	float: left;
+	padding: 10px;
+	font-size: 14px;
+	padding-top: 15px;
+}
+.headerNav li:hover{color: #00a1d6;cursor: pointer;}
+.homeImg{
+	height: 16px;
+	padding-left: 5px;
+	background: url(../img/icons.png); 
+	background-position: -658px -1176px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.donghua,.fanju,.yinyue,.wudao,.youxi,.keji,.shenghuo,.guichu,
+.shishang,.guanggao,.yule,.yingshi{
+	 background-color: #FFB3CC;
+     border-radius: 4px;
+     font-size: 12px;
+     height: 12px;
+     line-height: 12px;
+     padding: 1px 3px;
+     vertical-align: middle;
+     color: white;
+     text-align: center;
+}
+.guangchang,.zhibo{
+	font-size: 16px !important;
+	height: 30px !important;
+	line-height: 30px !important;
+	width: 70px !important;
+	padding:15px 0px 15px 15px !important;
+}
+.guangchang:hover{color: #00A1D6;}
+.zhibo:hover{color: #00A1D6;}
+.guangchangtu{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icons.png); 
+	background-position: -663px -920px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.zhibotu{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icons.png); 
+	background-position: -664px -534px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+.shoujiduan{
+	width: 58px;
+	height: 34px;
+	background: url(../img/手机端灰.png) 0px 14px no-repeat;
+	vertical-align: middle;
+}
+.shoujiduan:hover{
+	background: url(../img/手机端蓝.png) 0px 14px no-repeat;
+}
+/*头部添加框体区*/
+.huayou,.youxizhongxin,.zhibo,.zhoubian,.BML{position: relative;}
+.huayouNote,.youxizhongxinNote,.zhiboNote,.zhoubianNote,.BMLNote{
+	position: absolute;
+	height: 15px;
+	line-height: 15px;
+	border-radius: 3px;
+	padding: 3px;
+	font-size: 12px;
+	background: -webkit-linear-gradient(#FFFFFF,#E4E5F0);
+	color: #575757;
+	border: 1px solid #7D7D7D;
+	display: none;
+	z-index: 999;
+}
+/*游戏中心加框*/
+.youxizhongxinInner{
+	position: absolute;
+	width: 467px;
+	height: 258px;
+	background-color: #FFF;
+	border-radius: 0 0 4px 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    display: none;
+}
+.youxizhongxinInner .left{
+	width: 270px;
+	height: 100%;
+	float: left;
+}
+.youxizhongxinInner .left ul{
+	margin-left: 10px;
+}
+.youxizhongxinInner .left li{
+	float: left;
+	height: 104px;
+	padding: 10px 10px 0px;
+}
+.youxizhongxinInner .left li:hover{
+	background-color: #E5E9EF
+}
+.gamenote{
+	height: 25px;
+	line-height: 25px;
+	margin-top: -20px;
+	padding-top: 10px;
+	text-align: center;
+}
+.youxizhongxinInner .left ul img{
+	height: 65px;
+}
+.youxizhongxinInner .right{
+	float: right;
+	width: 190px;
+	height: 100%;
+	background: url(../img/边线.png) left 10px no-repeat;
+}
+.yinyangshi img{
+	display: block;
+	margin: 15px 5px 0 15px;
+	border-radius: 4px;
+}
+.yinyangshi{
+	position: relative;
+}
+.yinyangshiText{
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	color: white;
+}
+.youxizhongxinInner .right img{
+        display: block;	
+        margin-top: 15px;
+}
+.luntan{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	padding-top: 12px;
+	padding-right: 10px;
+	font-size: 12px;
+}
+.luntan a:visited{color: #00A1D9;}
+.youxizhongxinInner .right ul{
+	margin-top: 50px;
+}
+.youxizhongxinInner .right li{
+	font-size: 12px;
+	width: 190px !important;
+	height: 14px;
+	line-height: 26px;
+	height: 26px;
+	box-sizing: border-box;
+}
+.youxizhongxinInner .right li:hover{
+	background-color: #E5E9EF;
+	color: #00A1D9;
+}
+.youxizhongxinInner .right{
+	position: relative;
+}
+.gameImg{
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	left: 86%;
+	top: 9%;
+}
+/*游戏加框结束*/
+/*直播加框*/
+.zhiboInner{
+	position: absolute;
+	width: 526px;
+	height: 262px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	background-color: #FFF;
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+.zhiboInner .left{
+	width: 50%;
+	float: left;
+}
+.zhiboInner .right{
+	width: 50%;
+	float: right;
+}
+.hotLive{
+	font-size: 13px;
+	color: #EA759F;
+	margin-left:25px;
+}
+.zhiboInner ul{
+	margin: 0 0 7px 7px;
+	border-right: 1px solid #eaeaea;
+}
+.zhibolist li{
+	width: 80px;
+	height: 90px !important;
+	padding: 8px 0;
+	text-align: center;
+	position: relative;
+}
+.zhibolist i{
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+	font-weight: 700;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	line-height: 63px;
+	opacity: 0;
+	z-index: 100000;
+}
+.zhibolist i:hover{-webkit-animation: LIVE .1s linear;-webkit-animation-fill-mode: forwards;}
+@keyframes LIVE{
+	from{width: 20px;height: 20px;opacity: 0;}
+	to{width: 63px;height:63px;opacity: 1;}
+}
+.zhibolist img{
+	display: block;
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.hotAct img{
+	display: block;
+	padding: 12px;
+	margin: -5px auto;
+}
+.hotAct li{
+	height: 100% !important;
+	width: 100%;
+	padding: 0;
+}
+.hotAct li:hover{background-color: #EAEAEA;}
+/*直播加框结束*/
+/*头像加框开始*/
+#gerenzhongxin{
+	position: absolute;
+	top: 42px;
+	left: -100px;
+	width: 260px;
+	height: 300px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	z-index: 1000;
+	display: none;
+}
+.smallWidth{
+	width: 225px;
+	margin: 0 auto;
+}
+.yonghuID{
+	position: absolute;
+	left: 37%;
+	top:40px;
+}
+.yonghuLevel{
+	display: inline-block;
+	width: 19px;
+	height: 12px;
+	background: url(../img/Level-icons.png);
+	background-position: -80px -121px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.coin{
+	margin-top: 80px;
+}
+.coin .left{
+	float: left;
+}
+.coin .right{
+	margin-top: 15px;
+	float: right;
+}
+.coinImg{
+	background: url(../img/icons.png);
+	background-position: -343px -469px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+}
+.coin span{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding: 5px;
+}
+.mailtu{
+	background: url(../img/icons.png);
+	background-position: -343px -534px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.phonetu{
+	background: url(../img/icons.png);
+	background-position: -343px -599px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.leveltu{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background: url(../img/Level-icons.png);
+	background-position: -152px -116px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	border-radius: 50%;
+	background-color: #F3CB85;
+}
+.levelBar{
+	display: inline-block;
+	height: 10px;
+	width: 180px;
+	background-color: #F3CB85;
+	margin-left: -2px;
+}
+.exp{
+	float: right;
+	font-size: 12px;
+	margin-top: -25px;
+}
+.level{
+	margin-top: 10px;
+	padding-bottom: 15px ;
+	border-bottom: 1px solid #E5E9EF;
+}
+#gerenzhongxin li{
+	float: left !important;
+	width: 70px;
+	height: 18px !important;
+	float: left;
+	line-height: 18px;
+	padding: 5px 20px;
+}
+#gerenzhongxin ul{
+	margin-top: 3px;
+}
+.gerenzhongxinIcon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons.png);
+	background-position: -473px -407px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 2px;
+}
+.tougaoguanliIcon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons.png);
+	background-position: -536px -1048px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 2px;
+}
+.wodeqianbaoIcon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icons.png);
+	background-position: -472px -474px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 2px;
+}
+.zhibozhongxinIcon{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	background: url(../img/icons.png);
+	background-position: -473px -855px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	padding-right: 2px;
+}
+.gerenList li:hover{color: #00A1D6;cursor: pointer;}
+.tuichu{
+	width: 100%;
+	height: 25px;
+	margin-top: 19px;
+	line-height: 21px;
+	text-indent: 17em;
+	background-color: #f4f5f7
+}
+.tuichu:hover{color: #00A1D6; }
+/*头像加框结束*/
+/*消息下拉框开始*/
+.xiaoxiInner{
+	width: 110px;
+	height: 211px;
+	background-color: white;
+	position: absolute;
+	left: 665px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+.xiaoxiInner li{
+	width: 110px;
+	padding:0;
+	text-align: center;
+}
+.xiaoxiInner li:hover{
+	background-color: #E5E9EF;
+	color: #00A1D6;
+}
+/*消息下拉框结束*/
+/*动态下拉框开始*/
+.dongtaiInner{
+	width: 363px;
+	height: 411px;
+	background-color: #FFF;
+	position: absolute;
+	left: -130px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+.dongtaiBar li{
+	float: left;
+}
+.dongtaiBar li:hover{color: #00A1D6;text-decoration: underline;}
+.dongtaiBar ul{
+	width: 168px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+/*视频区*/
+.dongtaiContent{
+	height: 300px;
+	text-align: center;
+	color: #99a2aa;
+	margin: 0 10px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: block;
+}
+.chakanquanbu{
+	width: 90%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 4px;
+	background-color: #E5E9EF;
+	margin-top: 10px;
+}
+.chakanquanbu:hover{
+	background-color: #CCD0D7;
+}
+.shipin{
+	margin: 0 auto;
+	width: 343px;
+	padding: 10px 5px;
+}
+.shipinPost img{
+	display: block;
+	width: 42px;
+	height: 32px;
+	border: 1px solid #CCC;
+}
+.shipinDes{
+	font-size: 12px;
+	color: black;
+	padding: 0 10px;
+	line-height: 12px;
+}
+.tougao{
+	color: #CCCCCC;
+	padding-left: 30px;
+}
+.tougaoleibie{
+	font-size: 13px;
+	margin-top: 5px;
+	color: #00A1D6;
+}
+/*直播区*/
+.zhiboContent{
+	height: 300px;
+	display: none;
+}
+.zhengzaizhibo{
+	color: #E5979E;
+	padding-left: 30px;
+}
+.nomore{
+	width: 200px;
+	margin: 0 auto;
+	color: #99A2AA;
+}
+.shipin:hover{
+	background-color: #E5E9EF;
+}
+/*画友区*/
+.huayouContent{
+	height: 300px;
+	display: none;
+}
+/*动态加框结束*/
+/*收藏加框*/
+.shoucangInner{
+	width: 253px;
+	height: 137px;
+	background-color: #FFF;
+	position: absolute;
+	left: 720px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+.shoucangInner li{
+	height: 20px !important;
+	line-height: 20px;
+	width: 243px !important;
+	padding:  7px 5px;
+}
+.shoucangInner li:hover{
+	background-color: #CCD0D7
+}
+.chakanquanbushoucangqu{
+	width: 90%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 4px;
+	background-color: #E5E9EF;
+	margin-top: 5px;
+}
+.chakanquanbushoucangqu:hover{background-color: #CCD0D7}
+/*收藏加框结束*/
+/*历史加框开始*/
+.lishiInner{
+	width: 251px;
+	height: 262px;
+	background-color: #fff;
+	position: absolute;
+	left: 790px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	border-radius: 0 0 4px 4px;
+	display: none;
+}
+.lishiInner li{
+	width: 219px;
+	height: 20px !important;
+	line-height: 20px;
+	padding: 5px 16px;
+}
+.lishiInner li:hover{background-color: #CCD0D7}
+.jinri{
+	text-indent: 2em;
+	color: #99A2AA;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.zuori{
+	text-indent: 2em;
+	color: #99A2AA;
+	height: 20px;
+	line-height: 20px;
+}
+.chakanquanbulishi{
+	width: 90%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 4px;
+	background-color: #E5E9EF;
+	margin-top: 2px;
+}
+.chakanquanbulishi:hover{
+	background-color: #CCD0D7;
+}
+/*历史加框结束*/
+/*投稿加框*/
+.tougaoInner{
+	position: absolute;
+	top: 90%;
+	left: 764px;
+	width: 216px;
+	height: 64px;
+	background-color: #FFF;
+	display: none;
+}
+.tougaoInner li{
+	float: left;
+	width: 52px;
+	height: 64px !important;
+	padding: 0 10px;color: #F45A8D;
+}
+.tougaoInner li:hover{background-color: #E5E9EF}
+.shipintougao{
+	display: block;
+	width: 35px;
+	height: 30px;
+	background: url(../img/icons.png);
+	background-position:-454px -905px ;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.tougaoguanli{
+	display: block;
+	width: 35px;
+	height: 30px;
+	background: url(../img/icons.png);
+	background-position:-457px -970px ;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.chuangzuozhongxin{
+	display: block;
+	width: 35px;
+	height: 30px;
+	background: url(../img/icons.png);
+	background-position:-456px -1032px ;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+/*投稿加框结束*/
+
+/*导航栏*/
+#donghua li{float: none;font-size: 12px;width: 89px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#fanju li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#yinyue li{float: none;font-size: 12px;width: 109px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#wudao li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#youxi li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#keji li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#shenghuo li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#guichu li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#shishang li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#yule li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+#yingshi li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+.zhibo li{float: none;font-size: 12px;width: 84px !important;height:32px !important;line-height: 32px !important;padding: 0 23px;color: black !important;background: url(../img/icons2.png) 10px -1612px no-repeat;}
+
+
+#donghua li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#fanju li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#yinyue li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#wudao li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#youxi li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#keji li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#shenghuo li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#guichu li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#shishang li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#yule li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#yingshi li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+.zhibo li:hover{background-color: #E5E9EF;color: black;animation: selectLeft 0.2s linear;animation-fill-mode: forwards;-webkit-animation: selectLeft 0.2s linear;-webkit-animation-fill-mode: forwards;}
+#donghua,#fanju,#yinyue,#wudao,#youxi,#keji,#shenghuo,#guichu,#shishang,#yule,#yingshi,.zhibo{
+	position: relative;
+}
+.fanjuInner,.wudaoInner,.youxiInner,.kejiInner,.shenghuoInner,.guichuInner,
+.shishangInner,.yuleInner,.yingshiInner,.zhiboNavInner{
+	position: absolute;
+	width: 130px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	display: none;
+}
+.donghuaInner{
+	position: absolute;
+	width: 135px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	display: none;
+}
+.yinyueInner{
+	position: absolute;
+	width: 155px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+	display: none;
+}
+.headerNav i{
+	display: inline-block;
+	width: 6px;
+	height:10px;
+	margin-left: 3px;
+	background: url(../img/icons2.png);
+	background-position: -1px -1588px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	opacity: 0;
+}
+#donghua li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#fanju li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#yinyue li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#wudao li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#youxi li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#keji li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#shenghuo li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#guichu li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#shishang li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#yule li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+#yingshi li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+.zhibo li:hover i{
+	opacity: 1;
+	margin-left: 3px;
+	animation: selectRight 0.2s linear;animation-fill-mode: forwards;
+	-webkit-animation: selectRight 0.2s linear;-webkit-animation-fill-mode: forwards;
+}
+@keyframes selectRight{
+	from{margin-left: 5px;}
+	to{margin-left: 3px;}
+}
+@keyframes selectLeft{
+	from{background-position: 10px -1612px;}
+	to{background-position: 15px -1612px;}
+}
