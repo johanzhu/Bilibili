@@ -582,6 +582,7 @@
 	height: 211px;
 	background-color: white;
 	position: absolute;
+	z-index: 1000;
 	left: 665px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	border-radius: 0 0 4px 4px;
@@ -603,6 +604,7 @@
 	height: 411px;
 	background-color: #FFF;
 	position: absolute;
+	z-index: 1000;
 	left: -130px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
 	border-radius: 0 0 4px 4px;
@@ -695,6 +697,7 @@
 	height: 137px;
 	background-color: #FFF;
 	position: absolute;
+	z-index: 1000;
 	left: 720px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
 	border-radius: 0 0 4px 4px;
@@ -727,6 +730,7 @@
 	height: 262px;
 	background-color: #fff;
 	position: absolute;
+	z-index: 1000;
 	left: 790px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
 	border-radius: 0 0 4px 4px;
@@ -769,6 +773,7 @@
 /*投稿加框*/
 .tougaoInner{
 	position: absolute;
+	z-index: 1000;
 	top: 90%;
 	left: 764px;
 	width: 216px;
