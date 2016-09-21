@@ -182,5 +182,113 @@ $(function(){
 		function(){$('.headerNote')[0].style.display = 'block'},
 	    function(){$('.headerNote')[0].style.display = 'none'} 
 	)
+/*header结束*/
+/*Banner区*/
+   /*轮播图*/
+  var count = 0;
+  function jiaodiantu(){
+  	  $('.jiaodian0').addClass('on');
+  	  setInterval(
+  	  	function(){
+  	  		if(count < 5){
+  	  			 $('.jiaodiantu').css({"margin-left" : -440*count+"px"});
+  	  			 $('.scrollBar li').removeClass('on');
+  	  			 $('.jiaodian'+count).addClass('on');
+  	  			count += 1  ;
+  	  		}else{ count = 0 }
+  	  	},
+  	  	4000)/*setinterval结束*/
+  }
+  jiaodiantu();
+function jiaodianClick(){
+	$('.jiaodian0').click(
+		function(){ 
+			$('.scrollBar li').removeClass('on');
+			$('.jiaodian0').addClass('on');
+			$('.jiaodiantu').css({"margin-left" : 0+"px"});
+			}
+		)
+	$('.jiaodian1').click(
+		function(){ 
+			$('.scrollBar li').removeClass('on');
+			$('.jiaodian1').addClass('on');
+			$('.jiaodiantu').css({"margin-left" : -440+"px"});
+			}
+		)
+	$('.jiaodian2').click(
+		function(){ 
+			$('.scrollBar li').removeClass('on');
+			$('.jiaodian2').addClass('on');
+			$('.jiaodiantu').css({"margin-left" : -880+"px"});
+			}
+		)
+	$('.jiaodian3').click(
+		function(){ 
+			$('.scrollBar li').removeClass('on');
+			$('.jiaodian3').addClass('on');
+			$('.jiaodiantu').css({"margin-left" : -1320+"px"});
+			}
+		)
+	$('.jiaodian4').click(
+		function(){ 
+			$('.scrollBar li').removeClass('on');
+			$('.jiaodian4').addClass('on');
+			$('.jiaodiantu').css({"margin-left" : -1760+"px"});
+			}
+		)
+}
+jiaodianClick();
+  /*焦点图更多*/
+   $('.ImgBox').hover(
+		function(){$('.jiaodiantuMore')[0].style.display = 'block'},
+	    function(){$('.jiaodiantuMore')[0].style.display = 'none'} 
+	)
+     /*轮播图结束*/
+/*Banner右侧区域*/  
+   $('.threeDayHistory').hover(
+		function(){$('.leftBar')[0].style.display = 'block';$('.rightBar')[0].style.display = 'block'},
+	    function(){$('.leftBar')[0].style.display = 'none';$('.rightBar')[0].style.display = 'none'} 
+	)
+   $('.leftBar').click(function(){
+   	       var leftBarText = $('.leftBar span').text();
+   	       if(leftBarText == "昨日"){
+   	       	$('.leftBar span').text('一周');
+   	       	$('.rightBar span').text('三日');
+   	       	$('.HistoryScrollBox').css({"margin-top" : "-238px"});
+   	       }else if(leftBarText == "一周"){
+   	       	$('.leftBar span').text('三日');
+   	       	$('.rightBar span').text('昨日');
+   	       	$('.HistoryScrollBox').css({"margin-top" : "-476px"});
+   	       }else if(leftBarText == "三日"){
+   	       	$('.leftBar span').text("昨日");
+   	       	$('.rightBar span').text('一周');
+   	       	$('.HistoryScrollBox').css({"margin-top" : ""});
+   	       }
+   })
+    $('.rightBar').click(function(){
+   	       var rightBarText = $('.rightBar span').text();
+   	       if(rightBarText == "一周"){
+   	       	$('.rightBar span').text('昨日');
+   	       	$('.leftBar span').text('三日');
+   	       	$('.HistoryScrollBox').css({"margin-top" : "-476px"});
+   	       }else if(rightBarText == "昨日"){
+   	       	$('.rightBar span').text('三日');
+   	       	$('.leftBar span').text('一周');
+   	       	$('.HistoryScrollBox').css({"margin-top" : "-238px"});
+   	       }else if(rightBarText == "三日"){
+   	       	$('.rightBar span').text("一周");
+   	       	$('.leftBar span').text('昨日');
+   	       	$('.HistoryScrollBox').css({"margin-top" : ""});
+   	       }
+   })
+    $('.leftBar').bind("selectstart", function () { return false; });
+    $('.rightBar').bind("selectstart", function () { return false; });
+  
+  
+/*Banner区结束*/
+
+
+
+
 	
 })/*JS结束*/

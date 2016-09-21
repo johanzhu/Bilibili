@@ -854,6 +854,7 @@
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	display: none;
+	z-index: 1000;
 }
 .donghuaInner{
 	position: absolute;
@@ -861,6 +862,7 @@
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	display: none;
+	z-index: 1000;
 }
 .yinyueInner{
 	position: absolute;
@@ -868,6 +870,7 @@
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	display: none;
+	z-index: 1000;
 }
 .headerNav i{
 	display: inline-block;
@@ -969,6 +972,7 @@
 	position: absolute;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 	display: none;
+	z-index: 1000;
 }
 .guangchangInner .left{
 	float: left;
@@ -1048,6 +1052,7 @@
 	left: -180px;
 	top: 95%;
 	display: none;
+	z-index: 1000;
 }
 .erweima{
 	position: absolute;
@@ -1074,7 +1079,151 @@
 /*header结束♪(^∇^*)*/
 
 /*Banner区*/
+.banner{
+	height: 220px;
+}
+.scroll{
+	width: 440px;
+	position: relative;
+	overflow: hidden;
+}
+.scroll li{
+	float: left;
+}
+.ImgBox{
+	height: 220px;
+	width: 2200px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.scrollBar{
+	position: absolute;
+	z-index: 50;
+	left: 330px;
+	top: 195px;
+}
+.scrollBar li{
+	float: left;
+	width: 18px;
+	height: 18px;
+	padding: 0 1px;
+	background: url(../img/icons.png);
+	background-position: -855px -791px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.on{
+	background-position: -855px -727px !important;
+}
+.scrollBar li:hover{
+	background-position: -919px -791px;
+	cursor: pointer;
+}
+    /*焦点图下方遮罩*/
+.jiaodiantuBlur{
+	width: 440px;
+	height: 30px;
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	top: 87%;
+	background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+}
+  /*更多*/
+.jiaodiantuMore{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 4px;
+	padding: 5px;
+	left: 390px;
+	top: 160px;
+	display: none;
+	cursor: pointer;
+}
+/*轮播图右侧*/
+.threeDayHistory{
+	height: 220px;
+	width: 520px;
+	position: relative;
+}
+.threeDayHistory li{
+	float: left;
+	padding: 0 5px 18px 5px;
+	cursor: pointer;
+	position: relative;
+}
+.threeDayHistory img{
+	display: block;
+	width: 161px;
+	height: 101px;
+	border-radius: 4px;
+}
+.leftBar{
+	width: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 5px;
+	top: 40%;
+	display: none;
+}
+.leftBar i{
+	display: inline-block;
+	height: 35px;
+	width: 8px;
+	background: url(../img/icons2.png);
+	background-position: 2px -1213px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.leftBar:hover{background-color: rgba(0,0,0,0.9);cursor: pointer;}
+.rightBar{
+	width: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 468px;
+	top: 40%;
+	display: none;
+}
+.rightBar i{
+	display: inline-block;
+	height: 35px;
+	width: 8px;
+	background: url(../img/icons2.png);
+	background-position: 2px -1280px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+.rightBar:hover{background-color: rgba(0,0,0,0.9);cursor: pointer;}
+.postBlur{
+	width: 161px;
+	box-sizing: border-box;
+	height: 20px;
+	border-radius: 0 0 4px 4px;
+	position: absolute;
+	top: 68%;
+	background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+	color: white;
+	text-indent: 1em;
+}
+.HistoryScroll{
+	width: 520px;
+	height: 238px;
+	overflow: hidden;
+}
+.HistoryScrollBox{
+	width: 520px;
+	height: 714px;
+}
 
+
+/*轮播图右侧结束*/
 /*Banner区结束*/
 
 
