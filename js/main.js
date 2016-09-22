@@ -47,7 +47,7 @@ $(function(){
 				 "top" : "25px",
 	             "left": "-18px"
 			});
-			$('#gerenzhongxin').stop(true).slideDown(1000);
+			$('#gerenzhongxin').stop(true).slideDown(1000); 
 		},
 	    function(){
 				$('.touxiang img').animate({
@@ -281,13 +281,59 @@ jiaodianClick();
    	       	$('.HistoryScrollBox').css({"margin-top" : ""});
    	       }
    })
+    /*翻页按钮*/
     $('.leftBar').bind("selectstart", function () { return false; });
     $('.rightBar').bind("selectstart", function () { return false; });
-  
-  
 /*Banner区结束*/
-
-
+/*动态更新时内部圆圈旋转函数*/
+   $('.xindongtai').mouseenter(
+   	  function(){
+   	  	$('.xindongtaiIcon').css({
+   	  	   "animation": "rotate .25s linear",
+	       "-webkit-animation": "rotate .25s linear"
+   	  	})
+   	  }
+   	)  
+   $('.xindongtai').mouseleave(
+      function(){
+   		$('.xindongtaiIcon').css({
+   	  	   "animation": "Drotate .25s linear",
+	       "-webkit-animation": "Drotate .25s linear",
+   	  	})
+   	  }
+    )
+ /*推广区翻页效果*/  
+   $('.zhibopaihang').click(function(){
+   	   $('.container').css({"margin-top":""})
+   	   $('.zhibopaihang').css({"color":"#00A1D6","text-decoration":"underline"})
+   	   $('.guanzhudezhubo').css({"color":"#000","text-decoration":"none"})
+   	   $('.weinituijian').css({"color":"#000","text-decoration":"none"})
+   })
+   $('.guanzhudezhubo').click(function(){
+   	   $('.container').css({"margin-top":"-348px"})
+   	   $('.zhibopaihang').css({"color":"#000","text-decoration":"none"})
+   	   $('.guanzhudezhubo').css({"color":"#00a1d6","text-decoration":"underline"})
+   	   $('.weinituijian').css({"color":"#000","text-decoration":"none"})
+   	   
+   })
+   $('.weinituijian').click(function(){
+   	   $('.container').css({"margin-top":"-696px"})
+   	   $('.zhibopaihang').css({"color":"#000","text-decoration":"none"})
+   	   $('.guanzhudezhubo').css({"color":"#000","text-decoration":"none"})
+   	   $('.weinituijian').css({"color":"#00a1d6","text-decoration":"underline"})
+   })
+   /*有新动态与最新投稿*/
+    $('.youxindongtai').click(function(){
+    	$('.youxindongtai').css({"color":"#00A1D6","text-decoration":"underline"})
+    	$('.zuixintougao2').css({"color":"#000","text-decoration":"none"})
+    	$('.container2').css({"margin-top":""})
+    })
+     $('.zuixintougao2').click(function(){
+    	$('.zuixintougao2').css({"color":"#00A1D6","text-decoration":"underline"})
+    	$('.youxindongtai').css({"color":"#000","text-decoration":"none"})
+    	$('.container2').css({"margin-top":"-348px"})
+    })
+    
 
 
 	
