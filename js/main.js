@@ -375,6 +375,8 @@ jiaodianClick();
   	$('.zuixin').addClass('pick');
   	$('.weekpick li').not('.zuixin').find('i').attr('class','');
   	$('.weekpick li').not('.zuixin').removeClass('pick');
+  	$('.videoBlock .today').css({"display": "block"});
+  	$('.videoBlock ul').not('.today').css({"display":"none"});
   })
   $('.zhouyi').click(function(){
   	$('.zhouyi i:eq(0)').addClass('zhouyiIcon');
@@ -382,6 +384,8 @@ jiaodianClick();
   	$('.zhouyi').addClass('pick');
   	$('.weekpick li').not('.zhouyi').find('i').attr('class','');
   	$('.weekpick li').not('.zhouyi').removeClass('pick');
+  	$('.videoBlock .monday').css({"display": "block"});
+  	$('.videoBlock ul').not('.monday').css({"display":"none"});
   })
   $('.zhouer').click(function(){
   	$('.zhouer i:eq(0)').addClass('zhouerIcon');
@@ -389,6 +393,8 @@ jiaodianClick();
   	$('.zhouer').addClass('pick');
   	$('.weekpick li').not('.zhouer').find('i').attr('class','');
   	$('.weekpick li').not('.zhouer').removeClass('pick');
+  	$('.videoBlock .tuesday').css({"display": "block"});
+  	$('.videoBlock ul').not('.tuesday').css({"display":"none"});
   })
   $('.zhousan').click(function(){
   	$('.zhousan i:eq(0)').addClass('zhousanIcon');
@@ -396,6 +402,8 @@ jiaodianClick();
   	$('.zhousan').addClass('pick');
   	$('.weekpick li').not('.zhousan').find('i').attr('class','');
   	$('.weekpick li').not('.zhousan').removeClass('pick');
+  	$('.videoBlock .wednsday').css({"display": "block"});
+  	$('.videoBlock ul').not('.wednsday').css({"display":"none"});
   })
   $('.zhousi').click(function(){
   	$('.zhousi i:eq(0)').addClass('zhousiIcon');
@@ -403,6 +411,8 @@ jiaodianClick();
   	$('.zhousi').addClass('pick');
   	$('.weekpick li').not('.zhousi').find('i').attr('class','');
   	$('.weekpick li').not('.zhousi').removeClass('pick');
+  	$('.videoBlock .thursday').css({"display": "block"});
+  	$('.videoBlock ul').not('.thursday').css({"display":"none"});
   })
   $('.zhouwu').click(function(){
   	$('.zhouwu i:eq(0)').addClass('zhouwuIcon');
@@ -410,6 +420,8 @@ jiaodianClick();
   	$('.zhouwu').addClass('pick');
   	$('.weekpick li').not('.zhouwu').find('i').attr('class','');
   	$('.weekpick li').not('.zhouwu').removeClass('pick');
+  	$('.videoBlock .friday').css({"display": "block"});
+  	$('.videoBlock ul').not('.friday').css({"display":"none"});
   })
   $('.zhouliu').click(function(){
   	$('.zhouliu i:eq(0)').addClass('zhouliuIcon');
@@ -417,6 +429,8 @@ jiaodianClick();
   	$('.zhouliu').addClass('pick');
   	$('.weekpick li').not('.zhouliu').find('i').attr('class','');
   	$('.weekpick li').not('.zhouliu').removeClass('pick');
+  	$('.videoBlock .saturday').css({"display": "block"});
+  	$('.videoBlock ul').not('.saturday').css({"display":"none"});
   })
   $('.zhouri').click(function(){
   	$('.zhouri i:eq(0)').addClass('zhouriIcon');
@@ -424,7 +438,68 @@ jiaodianClick();
   	$('.zhouri').addClass('pick');
   	$('.weekpick li').not('.zhouri').find('i').attr('class','');
   	$('.weekpick li').not('.zhouri').removeClass('pick');
+  	$('.videoBlock .sunday').css({"display": "block"});
+  	$('.videoBlock ul').not('.sunday').css({"display":"none"});
   })
+  
+  /*动画滑动区域*/
+  $('.slideRight').hover(
+  	   function(){
+  	   	$('.slideRight').addClass('slideTo');
+  	   	$('.slideLeft').removeClass('slideTo');
+  	   	$('.slideBox').animate({"margin-left":"-260px"})
+  	   },
+      function(){
+           return null      	
+      }
+  )
+   $('.slideLeft').hover(
+  	   function(){
+  	   	$('.slideLeft').addClass('slideTo');
+  	   	$('.slideRight').removeClass('slideTo');
+  	   	$('.slideBox').animate({"margin-left":"0px"})
+  	   },
+      function(){
+           return null      	
+      }
+  )
+   /*番剧索引右侧区域自动轮播*/
+   function autoSlide(){
+   	   var num2 = 0;
+   	   setInterval(
+   	   	function(){
+   	   		if(num2 < 2){
+   	   			num2 += 1;
+   	   		}else{
+   	   			num2 = 0;
+   	   		}
+   	   		num2 && (function(){
+   	   		       	$('.slideRight').addClass('slideTo')
+  	   	            $('.slideLeft').removeClass('slideTo')
+  	   	            $('.slideBox').animate({"margin-left":   "-260px"});
+  	   	             }())
+   	   	   !num2 && (function(){
+   	   			   $('.slideLeft').addClass('slideTo')
+  	   	           $('.slideRight').removeClass('slideTo')
+  	   	           $('.slideBox').animate({"margin-left":  "0"});
+  	   	            }())
+   	   	},
+   	   	3000
+   	   )
+   }
+   autoSlide();
+   /*自动轮播结束*/
+  /*底部特效*/
+ $('.shouji').hover(function(){
+ 	$('.tag1').css({"display":"block"})
+ },function(){$('.tag1').css({"display":"none"})})
+  $('.weibo').hover(function(){
+ 	$('.tag2').css({"display":"block"})
+ },function(){$('.tag2').css({"display":"none"})})
+   $('.weixin').hover(function(){
+ 	$('.tag3').css({"display":"block"})
+ },function(){$('.tag3').css({"display":"none"})})
+  
   
     
 

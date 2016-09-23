@@ -1849,6 +1849,13 @@
 	border-radius: 4px;
 }
 /*番剧每日索引区~！*/
+.fanjuBlock{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.fanjuBlock .right{
+	margin-left: 3px;
+}
 .weekBar li{
 	float: left;
 	position: relative;
@@ -1861,7 +1868,7 @@
 	cursor: pointer;
 }
 .weekBar ul{
-	width: 626px;
+	width: 560px;
 	border-bottom: #E5E9EF 1px solid;
 }
 .pick{
@@ -1953,7 +1960,357 @@
 	background: url(../img/bangumi-weekday.png) -805px -40px no-repeat;
 	vertical-align: middle;
 }
+.weekBar{
+	position: relative;
+}
+.xinfanfangsongliebiao{
+	position: absolute;
+	left: 597px;
+	top: 0;
+	color: #F25D8E;
+	padding:  8px;
+	border: 1px solid #F25D8E;
+	border-radius: 4px;
+}
+.arrow{
+	display: inline-block;
+	width: 7px;
+	height: 13px;
+	vertical-align: calc(-2px);
+	margin-left: 10px;
+	background: url(../img/icons.png) -477px -280px no-repeat;
+}
+.xinfanfangsongliebiao:hover{color: #FFF;background-color: #F25D8E;cursor: pointer;}
+.xinfanfangsongliebiao:hover .arrow{background-position: -541px -218px;}
+    /*番剧列表区开始*/
+.videoBlock{
+	width: 705px;
+	height: 320px;
+	margin-top: 40px;
+	overflow: auto;
+}
+.videoBlock img{
+	display: block;
+	border-radius: 4px;
+}
+.videoBlock img:hover{
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	cursor: pointer;
+}
+.videoBlock li{
+	height: 73px;
+	width: 190px;
+	float: left;
+	padding: 15px;
+	position: relative;
+}
+.fanjuDes{
+	text-align: center;
+	width: 90px;
+	padding: 0 5px;
+}
+.gengxinzhi{
+	position: absolute;
+	top: 70px;
+	color: #AAA;
+}
+.new{
+	background-color: #FF8EB3;
+	color: white;
+	padding: 1px 5px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.old{
+	background-color: #BBC0CC;
+	color: white;
+	padding: 1px 5px;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.monday,.tuesday,.wednsday,.thursday,.friday,.saturday,.sunday{
+	display: none;
+}
+.slideBlock{
+	width: 260px;
+    border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+.slideBox{
+	width: 520px;
+}
+.slideBlock img{
+	float: left;
+}
+.imgBlur{
+	position: absolute;
+	width: 100%;
+	height: 23%;
+	top: 77%;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.imgBlur p{
+	color: white;
+	padding: 8px 20px;
+}
+.slideBlur{
+	position: absolute;
+	width: 100%;
+	height: 12%;
+	top: 88%;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.slideBar{
+	position: absolute;
+	width: 30%;
+	height: 8px;
+	top: 93%;
+	left: 35%;
+	cursor: pointer;
+}
+.slideLeft,.slideRight{
+	width: 20px;
+	height: 8px;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+.slideTo{
+	width: 50px;
+	background-color: #F25D8E;
+}
+.laofanju{
+	margin-top: 10px;
+}
+.laofanju li{
+	float: left;
+	width: 56px;
+	padding-right: 12px;
+	position: relative;
+	line-height: 20px;
+}
+.laofanju li:hover{color: #00A1D6;cursor: pointer;}
+.laofanju img{
+	width: 56px;
+	height: 56px;
+	border-radius: 4px;
+}
+.smblur{
+	position: absolute;
+	width: 56px;
+	height: 20px;
+	top: 36px;
+	border-radius: 0 0 4px 4px;
+	background-color: rgba(0,0,0,0.5);
+}
+.laofanju p{
+	position: absolute;
+	display: block;
+	padding-top: 20px;
+	top: -18px;
+	line-height: 20px;
+	padding-left: 8px;
+	color: #FFF;
+}
+/*热门节目区*/
+.remenjiemuBlock{
+	padding-bottom: 30px;
+}
+.remenjiemuBlock .tuiguangLogo{
+	background: none;
+	text-indent: 0;
+}
+.remenjiemuBlock .renshuAndtougao{
+	line-height: 30px;
+	background-color: #FFF;
+	font-size: 20px;
+	color: black;
+}
+.rank8{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #B8C0CC;
+	color: white !important;
+	font-style: normal;
+	font-weight: bold;
+	text-indent: 0.5em;
+	border-radius: 4px;
+}
+.remenzongyi li{
+	width: 120px;
+	padding: 10px 0;
+}
+.remenzongyi li:hover{
+	color: #00A1D6;
+} 
+.remenzongyi span{
+	margin-left: 5px;
+}
 /*特别推荐区*/
+.tebietuijianLogo{
+	background: url(../img/icons.png) -135px -785px no-repeat !important;
+	text-indent: 1.8em !important;
+	width: 148px;
+}
 /*Footer开始*/
-/*Footer结束*/
+.footer{
+	height: 305px;
+	background-color: #f6f9fa;
+	margin-top: 30px;
+	color: #000;
+}
+
+.footerBlock{
+	width: 300px;
+}
+.one ul{
+	border-right: 1px solid #E5E9EF;
+	width: 310px;
+}
+.second{
+	margin-left: 40px;
+	width: 300px;
+}
+.second ul{
+	border-right: 1px solid #E5E9EF;
+	width: 310px;
+}
+.second li:hover{color: #00A1D6;cursor: pointer;}
+.none{color: #F6F9FA;}
+.one li:hover{color: #00A1D6;cursor: pointer;}
+.footer h4{
+	color: #99aac5;
+	font-size: 14px;
+	padding: 40px 0 7px 0;
+	font-weight: normal;
+}
+.footer li{
+	float: left;
+	width: 100px;
+	font-size: 14px;
+	padding: 10px 0 0 0;
+	
+}
+.third{
+	margin-left: 30px;
+}
+.third li{
+   width: 70px;
+   padding: 0 5px;
+   margin-top: 50px;
+   text-indent: -5px;
+   position: relative;
+}
+.third li:nth-child(1){text-indent: -5px;}
+.third li:hover{color: #00A1D6;}
+.weixin{
+	display: block;
+	width: 56px;
+	height: 56px;
+	background: url(../img/icons.png) -1026px -68px no-repeat;
+}
+.weibo{
+	display: block;
+	width: 56px;
+	height: 56px;
+	background: url(../img/icons.png) -1026px -324px no-repeat;
+}
+.shouji{
+	display: block;
+	width: 56px;
+	height: 56px;
+	background: url(../img/icons.png) -1026px -196px no-repeat;
+}
+.shoujitext{
+	margin-top: 10px;
+}
+.xinlangtext{
+	margin-top: 10px;
+	text-indent: 1px;
+}
+.weixintext{
+	margin-top: 10px;
+	text-indent: 1px;
+}
+.shouji:hover{background-position: -1092px -196px;cursor: pointer;}
+.weibo:hover{background-position: -1092px -324px;cursor: pointer;}
+.weixin:hover{background-position: -1092px -68px;cursor: pointer;}
+
+.footererweima{
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background-color: #FFF;
+	border: 1px solid #E5E9EF;
+	top: -168%;
+	left: -42%;
+	display: none;
+}
+.erweimatupian{
+	background: url(../img/底部二维码图片.png);
+	position: absolute;
+	width: 100px;
+	height: 100px;
+    top: -115px;
+    left: -43px;
+}
+.footererweima .footerarrow{
+	position: absolute;
+	background: url(../img/wx-arrow.png);
+	display: block;
+	width: 16px;
+	height: 14px;
+	top: 100%;
+	left: 45%;
+	
+}
+.footerBottom{
+	margin-top: 25px;
+}
+.footerBottom li:nth-child(1){
+	height: 80px;
+	width: 100px;
+	background: url(../img/footpic.png) 0 10px no-repeat;
+}
+.footerBottom li:nth-child(2){
+	font-size: 12px;
+	color: #B0A2BB;
+	width: 268px;
+	padding-left: 10px;
+}
+.footerBottom li:nth-child(3){
+	font-size: 12px;
+	color: #B0A2BB;
+	width: 268px;
+	padding-left: 15px;
+}
+.footerBottom li:nth-child(4){
+	font-size: 12px;
+	color: #B0A2BB;
+	width: 268px;
+	padding-left: 15px;
+}
+.footerBottom ul div{
+	padding: 3px 0;
+}
+.lastImg{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons.png) -1367px -89px no-repeat;
+	vertical-align: calc(-2px);
+}
+/*FOOTER结束*/
+/*侧边导航条*/
+
+
+/*侧边导航条结束*/
+/*终于都结束了。。花了我四天时间。。过程真的很艰辛。
+ * 其实还有很多地方偷了懒。。但是算是做出来了
+ */
 
