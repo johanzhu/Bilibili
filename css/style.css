@@ -1271,7 +1271,8 @@
 
 /*推广区开始*/
 .tuiguang{
-	margin-top: 40px;
+	margin-top: 25px;
+	
 }
     /*推广头*/
 .tuiguangheader{
@@ -1640,9 +1641,11 @@
 	width: 200px;
 	height: 20px;
 	line-height: 20px;
+	margin-top: -10px;
 }
 .donghuaDes .right{
-	margin-left: 128px;
+	margin-left: 130px;
+	width: 180px;
 }
 .paihang{
 	font-size: 18px;
@@ -1655,9 +1658,11 @@
 	margin-left: 20px;
 	color: #00A1D6;
 	text-decoration: underline;
+	cursor: pointer;
 }
 .yuanchuang{
 	margin-left: 10px;
+	cursor: pointer;
 }
 .dateBar{
 	margin-left: 75px;
@@ -1747,14 +1752,208 @@
 	background-color: #E5E9EF;
 	margin-top: -15px;
 }
-#donghuachakangengduo em{
+#donghuachakangengduo i{
 	display: inline-block;
-	width: 12px;
-	height: 12px;
-	background: url(../img/icons2.png) -478px -218px no-repeat;
+	width: 6px;
+	height: 11px;
+	margin-left: 2px;
+	vertical-align: calc(-1px);
+	background:url(../img/icons.png) -478px -218px;
 }
 #donghuachakangengduo:hover{background-color: #CCD0D7}
+.container3 img{
+	display: inline-block;
+	width: 81px !important;
+	height: 51px !important;
+	padding: 0;
+	margin-left: 10px;
+}
+.first{
+	margin-left: 15px;
+}
+.rankTop{
+	margin-bottom: 10px;
+	color: black;
+}
+.line1:hover{color: #00A1D6;}
+.line2{
+	color: #99A2AA;
+}
 /*动画区结束*/
-
-
+/*公共火焰标语*/
+#huoyanbiaoti{
+	display: inline-block;
+	width: 200px;
+	color: #6D757A;
+	float: left;
+	margin-top: 3px;
+	margin-left: -250px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	background: url(../img/icons.png) -644px -1110px no-repeat;
+}
+#huoyanbiaoti:hover{color: #00A1D6;}
+/*舞蹈区*/
+.wudaoLogo{
+	background: url(../img/icons.png) -135px -461px;
+}
+/*音乐区*/
+.yinyueLogo{
+	background: url(../img/icons.png) -135px -266px;
+}
+/*科技区*/
+.kejiLogo{
+	background: url(../img/icons.png) -135px -525px;
+}
+/*番剧区*/
+.fanjuLogo{
+	background: url(../img/icons.png) -135px -142px;
+}
+/*游戏区*/
+.youxiLogo{
+	background: url(../img/icons.png) -135px -204px;
+}
+/*生活区*/
+.shenghuoLogo{
+	background: url(../img/icons.png) -135px -971px;
+}
+/*鬼畜区*/
+.guichuLogo{
+	background: url(../img/icons.png) -135px -332px; 
+}
+/*时尚区*/
+.shishangLogo{
+	background: url(../img/icons.png) -135px -718px;
+}
+/*广告区*/
+.guanggaoLogo{
+	background: url(../img/icons.png) -135px -1231px;
+}
+/*娱乐区*/
+.yuleLogo{
+	background: url(../img/icons.png) -135px -1031px;
+}
+/*电影区*/
+.dianyingLogo{
+	background: url(../img/icons.png) -135px -396px;
+}
+/*电视剧区*/
+.dianshijuLogo{
+	background: url(../img/icons.png) -135px -847px;
+}
+/*长条形广告*/
+.ad img{
+	width: 980px;
+	height: 90px;
+	margin: 0 auto;
+	border-radius: 4px;
+}
+/*番剧每日索引区~！*/
+.weekBar li{
+	float: left;
+	position: relative;
+	z-index: 10;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+.weekBar ul{
+	width: 626px;
+	border-bottom: #E5E9EF 1px solid;
+}
+.pick{
+	width: 121px;
+	background-color:#00A1D6; 
+	border-radius: 4px;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.jianjian{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 34px;
+	height: 10px;
+	background: url(../img/icons.png) -845px -487px no-repeat;
+	left: 38%;
+	top: 100%;
+}
+.zuixinIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -934px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhouyiIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -37px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhouerIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -165px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhousanIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -293px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhousiIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -421px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhouwuIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -547px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhouliuIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -676px -40px no-repeat;
+	vertical-align: middle;
+}
+.zhouriIcon{
+	display: inline-block;
+	margin: -20px 10px 0 -10px;
+	line-height: 25px;
+	width: 51px;
+	height: 60px;
+	background: url(../img/bangumi-weekday.png) -805px -40px no-repeat;
+	vertical-align: middle;
+}
+/*特别推荐区*/
+/*Footer开始*/
+/*Footer结束*/
 

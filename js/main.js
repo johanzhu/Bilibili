@@ -333,8 +333,100 @@ jiaodianClick();
     	$('.youxindongtai').css({"color":"#000","text-decoration":"none"})
     	$('.container2').css({"margin-top":"-348px"})
     })
+    /*全部原创*/
+    $('.quanbu').hover(
+    	function(){
+    		$('.quanbu').css({"color":"#00a1d6","text-decoration":"underline"})
+    		$('.yuanchuang').css({"color":"#000","text-decoration":"none"})
+    		$('.box1').css({"margin-top":""})
+    	},
+    	function(){
+    		return null
+    	}
+    )
+    $('.yuanchuang').hover(
+    	function(){
+    		$('.quanbu').css({"color":"#000","text-decoration":"none"})
+    		$('.yuanchuang').css({"color":"#00a1d6","text-decoration":"underline"})
+    		$('.box1').css({"margin-top":"-348px"})
+    	},
+    	function(){
+    		return null
+    	}
+    )
+    var num = 0;
+    $('.yizhou').click(function(){
+    	    var text2 = $('.yizhou').text();
+    	    num += 1;
+    	    if( num%2 != 0){
+    	    	$('.yizhou').text("三日");
+    	    	$('.sanri').text("一周");
+    	    	$('.box1').css({"margin-top":"-348px"})
+    	    }else{
+    	    	$('.yizhou').text("一周");
+    	    	$('.sanri').text("三日");/*血一样的教训。。先查代码，再查逻辑！！*/
+    	    	$('.box1').css({"margin-top":""})
+    	    }
+    })
+   /*番剧索引区*/
+  $('.zuixin').click(function(){
+  	$('.zuixin i:eq(0)').addClass('zuixinIcon');
+  	$('.zuixin i:eq(1)').addClass('jianjian');
+  	$('.zuixin').addClass('pick');
+  	$('.weekpick li').not('.zuixin').find('i').attr('class','');
+  	$('.weekpick li').not('.zuixin').removeClass('pick');
+  })
+  $('.zhouyi').click(function(){
+  	$('.zhouyi i:eq(0)').addClass('zhouyiIcon');
+  	$('.zhouyi i:eq(1)').addClass('jianjian');
+  	$('.zhouyi').addClass('pick');
+  	$('.weekpick li').not('.zhouyi').find('i').attr('class','');
+  	$('.weekpick li').not('.zhouyi').removeClass('pick');
+  })
+  $('.zhouer').click(function(){
+  	$('.zhouer i:eq(0)').addClass('zhouerIcon');
+  	$('.zhouer i:eq(1)').addClass('jianjian');
+  	$('.zhouer').addClass('pick');
+  	$('.weekpick li').not('.zhouer').find('i').attr('class','');
+  	$('.weekpick li').not('.zhouer').removeClass('pick');
+  })
+  $('.zhousan').click(function(){
+  	$('.zhousan i:eq(0)').addClass('zhousanIcon');
+  	$('.zhousan i:eq(1)').addClass('jianjian');
+  	$('.zhousan').addClass('pick');
+  	$('.weekpick li').not('.zhousan').find('i').attr('class','');
+  	$('.weekpick li').not('.zhousan').removeClass('pick');
+  })
+  $('.zhousi').click(function(){
+  	$('.zhousi i:eq(0)').addClass('zhousiIcon');
+  	$('.zhousi i:eq(1)').addClass('jianjian');
+  	$('.zhousi').addClass('pick');
+  	$('.weekpick li').not('.zhousi').find('i').attr('class','');
+  	$('.weekpick li').not('.zhousi').removeClass('pick');
+  })
+  $('.zhouwu').click(function(){
+  	$('.zhouwu i:eq(0)').addClass('zhouwuIcon');
+  	$('.zhouwu i:eq(1)').addClass('jianjian');
+  	$('.zhouwu').addClass('pick');
+  	$('.weekpick li').not('.zhouwu').find('i').attr('class','');
+  	$('.weekpick li').not('.zhouwu').removeClass('pick');
+  })
+  $('.zhouliu').click(function(){
+  	$('.zhouliu i:eq(0)').addClass('zhouliuIcon');
+  	$('.zhouliu i:eq(1)').addClass('jianjian');
+  	$('.zhouliu').addClass('pick');
+  	$('.weekpick li').not('.zhouliu').find('i').attr('class','');
+  	$('.weekpick li').not('.zhouliu').removeClass('pick');
+  })
+  $('.zhouri').click(function(){
+  	$('.zhouri i:eq(0)').addClass('zhouriIcon');
+  	$('.zhouri i:eq(1)').addClass('jianjian');
+  	$('.zhouri').addClass('pick');
+  	$('.weekpick li').not('.zhouri').find('i').attr('class','');
+  	$('.weekpick li').not('.zhouri').removeClass('pick');
+  })
+  
     
-
 
 	
 })/*JS结束*/
