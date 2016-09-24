@@ -499,9 +499,233 @@ jiaodianClick();
    $('.weixin').hover(function(){
  	$('.tag3').css({"display":"block"})
  },function(){$('.tag3').css({"display":"none"})})
-  
-  
-    
 
-	
-})/*JS结束*/
+
+/*侧边导航条滚动特效*/
+  window.onscroll = function(){
+  	var distance = document.body.scrollTop || document.documentElement.scrollTop;
+  	     if(  distance< 831 ){
+  	     	console.log('a');
+  	     	$('.aside li').removeClass('picked');
+  	     }
+  	     else if( distance<1246){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.zhiboS').addClass('picked');
+  	     }
+  	     else if( distance<1769){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.donghuaS').addClass('picked');
+  	     }
+  	     else if( distance<2185){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.wudaoS').addClass('picked');
+  	     }
+  	     else if( distance<2685){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.yinyueS').addClass('picked');
+  	     }
+  	     else if( distance<3110){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.kejiS').addClass('picked');
+  	     }
+  	     else if( distance<3995){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.fanjuS').addClass('picked');
+  	     }
+  	     else if( distance<4384){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.youxiS').addClass('picked');
+  	     }
+  	     else if( distance<5041){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.shenghuoS').addClass('picked');
+  	     }
+  	     else if( distance<5457){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.guichuS').addClass('picked');
+  	     }
+  	     else if( distance<5872){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.shishangS').addClass('picked');
+  	     }
+  	     else if( distance<6301){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.guanggaoS').addClass('picked');
+  	     }
+  	     else if( distance<6717){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.yuleS').addClass('picked');
+  	     }
+  	     else if( distance<7133){
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.dianyingS').addClass('picked');
+  	     }else{
+  	     	$('.aside li').removeClass('picked');
+  	     	$('.TVjuS').addClass('picked');
+  	     }
+  	     
+         if( distance > 75){
+         	$('.aside').css({"top":"0"})
+         }else{
+         	$('.aside').css({"top":"250px"})
+         }
+  }
+/*底部的帧动画*/
+  $('.lastBox').mouseenter(
+  	   function(){
+  	   	var num3 = 0;
+  	   	setInterval(
+  	   		function(){
+  	   		if( num3 < 16 ){
+   	   			$('.lastBox').css({
+  	             "background-position":    -80*num3+"px"+" "+"0" 				
+  	  			})
+   	   			num3 += 1;
+  	   		}else{
+  	   			//$('.lastBox').addClass('animate');
+  	   		}
+  	   		}
+  	   	,66)
+  	   	setTimeout(function(){$('.floatBox').css({"display":"block"})},500)
+  	   }
+  )
+  $('.lastBox').mouseleave(
+  	function(){
+      	$('.lastBox').removeClass('animate');
+  		var num4 = 15;
+  			setInterval(
+  	   		function(){
+  	   		if( num4 >= 0 ){
+   	   			$('.lastBox').css({
+  	             "background-position":    -80*num4+"px"+" "+"0" 				
+  	  			})
+   	   			num4 -= 1;
+  	   		}
+  	   		}
+  	   	,66)
+  		$('.floatBox').css({"display":"none"})
+  	}
+  )
+  /*滚动条返回效果*/
+  $('.fanhui').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:0},500);
+  })
+  /*滚动条定位特效*/
+ $('.zhiboS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:831},500);
+       $(this).addClass('picked');
+  })
+$('.donghuaS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:1246},500);
+       $(this).addClass('picked');
+  })
+$('.wudaoS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:1769},500);
+       $(this).addClass('picked');
+  })
+$('.yinyueS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:2185},500);
+       $(this).addClass('picked');
+  })
+$('.kejiS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:2685},500);
+       $(this).addClass('picked');
+  })
+$('.fanjuS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:3110},500);
+       $(this).addClass('picked');
+  })
+$('.youxiS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:3955},500);
+       $(this).addClass('picked');
+  })
+$('.shenghuoS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:4384},500);
+       $(this).addClass('picked');
+  })
+$('.guichuS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:5041},500);
+       $(this).addClass('picked');
+  })
+$('.shishangS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:5457},500);
+       $(this).addClass('picked');
+  })
+$('.guanggaoS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:5872},500);
+       $(this).addClass('picked');
+  })
+$('.yuleS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:6301},500);
+       $(this).addClass('picked');
+  })
+$('.dianyingS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:6717},500);
+       $(this).addClass('picked');
+  })
+$('.TVjuS').click(function(){
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:7133},500);
+       $(this).addClass('picked');
+  })
+
+
+
+
+
+
+
+
+
+
+})/*Jquery结束*/
+ /*刷新时判断scrollTop的位置*/
+ window.onload = function(){
+  	 var distance = document.body.scrollTop || document.documentElement.scrollTop;	
+         if( distance > 75){
+         	$('.aside').css({"top":"0"})
+         }else{
+         	$('.aside').css({"top":"250px"})
+         }
+    
+    $('.aside').css({
+    	      	"left" :  "87%"
+    	      })
+    
+    var WIDTH = document.body.offsetWidth;
+    if( WIDTH < 1330){
+    	      $('.aside').css({
+    	      	"left" :  (WIDTH - 50)+"px"
+    	      })
+    	}
+         
+  }
+/*刷新时判断距离左侧的位置*/ 
+window.onresize = function(){
+	var WIDTH = document.body.offsetWidth;
+	var t = window.screen.availWidth;
+    	if( WIDTH < 1330){
+    	      $('.aside').css({
+    	      	"left" :  (WIDTH - 50)+"px"
+    	      })
+    	}else{
+    		$('.aside').css({
+    	      	"left" :  "87%"
+    	      })
+    	}
+}
+

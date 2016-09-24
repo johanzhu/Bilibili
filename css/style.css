@@ -2307,10 +2307,99 @@
 }
 /*FOOTER结束*/
 /*侧边导航条*/
-
-
+.aside{
+   position: fixed;
+   left: 87%;
+   top: 250px;
+   z-index: 233;
+}
+.aside ul{
+   background-color: #F6F9FA;
+   border: 1px solid #E5E9EF;
+   border-radius: 4px;
+   width: 49px;
+}
+.aside li{
+	padding: 8px 11px;
+	cursor: pointer;
+}
+.aside li:hover{background-color: #00A1D6;color: white;}
+.picked{
+	background-color: #00A1D6;color: white;
+}
+.paixuS i{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/icons.png) -659px -151px no-repeat;
+}
+.paixuS:hover i{
+	background-position: -723px -151px;
+}
+.verticalSpace{
+	width: 30px;
+	height: 15px;
+	margin-left: 10px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-bottom: none;
+	border-top: none;
+	border-radius: 4px;
+}
+.fanhui{
+	width: 49px;
+	height: 45px;
+	background-color: #F6F9FA;
+	border: 1px solid #E5E9EF;
+	border-radius: 4px;
+}
+.fanhuiIcon{
+	display: block;
+	width: 40px;
+	height: 30px;
+	background: url(../img/icons.png) -648px -75px no-repeat;
+}
+.fanhui:hover{
+	background-color: #00A1D6;
+	cursor: pointer;
+}
+.fanhui:hover .fanhuiIcon{
+	background-position: -713px -75px;
+}
+.lastBox{
+	position: relative;
+	left: -16px;
+	width: 80px;
+	height: 80px;
+	background: url(../img/tv_animate.png) 0px 0px no-repeat;
+	cursor: pointer
+}
+.floatBox{
+	position: absolute;
+	width: 106px;
+	height: 44px;
+	left: -113%;
+	top: -20%;
+	display: none;
+}
+@keyframes arrow{
+	14.28;%{background-position: -1200px 0;}
+	28.56%{background-position: -1120px 0;}
+	42.84%{background-position: -1040px 0;}
+	57.12%{background-position: -960px 0;}
+	71.4%{background-position: -880px 0;}
+	85.68%{background-position: -800px 0;}
+	100%{background-position: -720px 0;}
+}
+.animate{
+	animation : arrow 0.4375s step-start infinite;
+	-webkit-animation: arrow 0.4375s step-start infinite;
+}
 /*侧边导航条结束*/
 /*终于都结束了。。花了我四天时间。。过程真的很艰辛。
  * 其实还有很多地方偷了懒。。但是算是做出来了
  */
+
+
+ 
 
