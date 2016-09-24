@@ -2,15 +2,15 @@
 Bilibili copy~ (B站   自制版   (๑•̀ㅂ•́)و✧!)- ( ゜- ゜)つロ 乾杯~ </br>
 http://johanzhu.github.io/Bilibili/</br>
 Tips:
-　　　Header top have extra Div Box , put your mouse on it and see ~</br></br>
+　　Header top have extra Div Box , put your mouse on it and see ~</br>
 　　　
-　　　In the following of area "番剧（animate series）" ,there is an special DIV Box ~It's cool!Do not miss it!</br></br>
+　　In the following of area "番剧（animate series）" ,there is an special DIV Box ~It's cool!Do not miss it!</br>
 　　　
-　　　Pay attention to the sideBar ...It takes me lot of work T~T</br>
+　　Pay attention to the sideBar ...It takes me lot of work T~T</br>
 　　　
-　　　The footer of the page also have its mouse event !Don't miss it~ ^ - ^</br></br>
+　　The footer of the page also have its mouse event !Don't miss it~ ^ - ^</br>
 　　　
-It takes me so much time  to finish this page~</br>
+　　It takes me so much time  to finish this page~</br></br>
 
 (You can contact me by zhubei09@163.com and 634606335@qq.com I'm looking for a job!)</br></br>
 (Tips:</br>
