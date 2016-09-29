@@ -25,13 +25,13 @@ $(function(){
 		function(){$('.youxizhongxinInner')[0].style.display = 'block'},
 	    function(){$('.youxizhongxinInner')[0].style.display = 'none'} 
 	)
-	$('.fate').hover(function(){$('.gametu')[0].src = 'img/fate吾皇.png'},function(){$('.gametu')[0].src = ''})
-	$('.jianxia').hover(function(){$('.gametu')[0].src = 'img/剑侠世界.png'},function(){$('.gametu')[0].src = ''})
-	$('.shendai').hover(function(){$('.gametu')[0].src = 'img/神代梦华谭.png'},function(){$('.gametu')[0].src = ''})
-	$('.shaonv').hover(function(){$('.gametu')[0].src = 'img/少女咖啡枪.png'},function(){$('.gametu')[0].src = ''})
-	$('.ruguo').hover(function(){$('.gametu')[0].src = 'img/如果的世界.png'},function(){$('.gametu')[0].src = ''})
-	$('.huanyou').hover(function(){$('.gametu')[0].src = 'img/幻游猎人.png'},function(){$('.gametu')[0].src = ''})
-	$('.mofa').hover(function(){$('.gametu')[0].src = 'img/魔法少女小圆.png'},function(){$('.gametu')[0].src = ''})
+	$('.fate').hover(function(){$('.gametu')[0].src = 'img/fate吾皇.webp'},function(){$('.gametu')[0].src = ''})
+	$('.jianxia').hover(function(){$('.gametu')[0].src = 'img/剑侠世界.webp'},function(){$('.gametu')[0].src = ''})
+	$('.shendai').hover(function(){$('.gametu')[0].src = 'img/神代梦华谭.webp'},function(){$('.gametu')[0].src = ''})
+	$('.shaonv').hover(function(){$('.gametu')[0].src = 'img/少女咖啡枪.webp'},function(){$('.gametu')[0].src = ''})
+	$('.ruguo').hover(function(){$('.gametu')[0].src = 'img/如果的世界.webp'},function(){$('.gametu')[0].src = ''})
+	$('.huanyou').hover(function(){$('.gametu')[0].src = 'img/幻游猎人.webp'},function(){$('.gametu')[0].src = ''})
+	$('.mofa').hover(function(){$('.gametu')[0].src = 'img/魔法少女小圆.webp'},function(){$('.gametu')[0].src = ''})
 /*直播框*/	
 	$('.zhiboBlur').hover(
 		function(){$('.zhiboInner')[0].style.display = 'block'},
