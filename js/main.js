@@ -505,7 +505,6 @@ jiaodianClick();
   window.onscroll = function(){
   	var distance = document.body.scrollTop || document.documentElement.scrollTop;
   	     if(  distance< 831 ){
-  	     	console.log('a');
   	     	$('.aside li').removeClass('picked');
   	     }
   	     else if( distance<1246){
@@ -701,13 +700,19 @@ $('.TVjuS').click(function(){
          }else{
          	$('.aside').css({"top":"250px"})
          }
-    
+         
+         
+    var leftDistance = $('.comWidth')[3].offsetLeft;
+    var divLeft = $('.comWidth').eq(3).width();
+    console.log(leftDistance);
+    console.log(divLeft);
+    var Fleft = leftDistance + divLeft;
     $('.aside').css({
-    	      	"left" :  "87%"
+    	      	"left" :  Fleft + "px",
     	      })
     
     var WIDTH = document.body.offsetWidth;
-    if( WIDTH < 1330){
+    if( WIDTH < 1100){
     	      $('.aside').css({
     	      	"left" :  (WIDTH - 50)+"px"
     	      })
@@ -718,13 +723,18 @@ $('.TVjuS').click(function(){
 window.onresize = function(){
 	var WIDTH = document.body.offsetWidth;
 	var t = window.screen.availWidth;
-    	if( WIDTH < 1330){
+	var leftDistance = $('.comWidth')[3].offsetLeft;
+    var divLeft = $('.comWidth').eq(3).width();
+    console.log(leftDistance);
+    console.log(divLeft);
+    var Fleft = leftDistance + divLeft;
+    	if( WIDTH < 1100){
     	      $('.aside').css({
     	      	"left" :  (WIDTH - 50)+"px"
     	      })
     	}else{
     		$('.aside').css({
-    	      	"left" :  "87%"
+    	      	"left" :    Fleft + "px"
     	      })
     	}
 }

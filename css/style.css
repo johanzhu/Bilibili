@@ -2309,7 +2309,6 @@
 /*侧边导航条*/
 .aside{
    position: fixed;
-   left: 87%;
    top: 250px;
    z-index: 233;
 }
