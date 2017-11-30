@@ -12,7 +12,7 @@ Tips:
 　　　
 　　It takes me so much time  to finish this page~</br></br>
 
-(You can contact me by zhubei09@163.com or 634606335@qq.com I'm looking for a job!)</br></br>
+(You can contact me by zhubei09@163.com or 634606335@qq.com!)</br></br>
 (Tips:</br>
 　　顶部区域有额外的特效~</br>
 　　番剧区域下方有非重复的区域~</br>
